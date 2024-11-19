@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    // "configurations": [
+    //     {
+    //         "name": "Python Debugger: Current File",
+    //         "type": "debugpy",
+    //         "request": "launch",
+    //         "program": "${file}",
+    //         "console": "integratedTerminal"
+    //     }
+    // ]
+    "compounds": [
+        {
+            "name": "Client+Server",
+            "configurations": [ "Server", "Client React", "Client" ]
+        }
+    ],
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Server",
+            "program": "APP/backend/server.py"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Client",
+            "url": "http://localhost:3000",
+            "webRoot": "$APP/client/src/index.js"
+        },
+        {
+            "command": "npm start --prefix APP/client",
+            "name": "Client React",
+            "request": "launch",
+            "type": "node-terminal",
+            "env": { "BROWSER": "none" }
+        }
+    ]
+}

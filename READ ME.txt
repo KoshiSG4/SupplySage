@@ -1,0 +1,9 @@
+STEP 1: Database COnfiguration
+
+This project ustilises MySQL wrokbench. Configure the database connection in server.py file using your own database credentials.
+
+STEP 2: Activate the python environment
+
+STEP 3: Run the backend file 'python server.py' 
+
+STEP 4: Run the frontend file 'npm start'
